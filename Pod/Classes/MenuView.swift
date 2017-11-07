@@ -132,6 +132,7 @@ open class MenuView: UIScrollView {
             if self.menuOptions.selectedItemCenter {
                 self.positionMenuItemViews()
             }
+            self.animateUnderlineViewIfNeeded()
         }) { [weak self] (_) in
             guard let _ = self else { return }
             
